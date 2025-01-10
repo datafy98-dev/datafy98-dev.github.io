@@ -1,0 +1,548 @@
+<html><head><base href="/"><title>;&#x2620;&#xfe0f; &#x421;&#x42b;&#x420;&#x41d;&#x418;&#x41a;&#x418; &#x411;&#x410;&#x420;&#x410;&#x411;&#x423;&#x41b;&#x42c;&#x41a;&#x418; &#x41a;&#x418;&#x41b;&#x42c;&#x41a;&#x418; &#x41a;&#x418;&#x41b;&#x42c;&#x41a;&#x418; - &#x41c;&#x415;&#x413;&#x410; &#x423;&#x41b;&#x42c;&#x422;&#x420;&#x410; &#x421;&#x423;&#x41f;&#x415;&#x420; &#x41f;&#x423;&#x41f;&#x415;&#x420; &#x424;&#x423;&#x422;&#x411;&#x41e;&#x41b;&#x41a;&#x418; + &#x41f;&#x420;&#x41e;&#x414;&#x410;&#x416;&#x410; &#x414;&#x423;&#x428;&#x418; &#x414;&#x410;&#x420;&#x41e;&#x41c;!!!! &#x421;&#x41a;&#x418;&#x411;&#x418;&#x414;&#x418; &#x420;&#x410;&#x419;&#x42f;&#x41d; &#x413;&#x41e;&#x421;&#x41b;&#x418;&#x41d;&#x413; MEMORIES BROKEN!!!! &#x1f525;</title>
+<style>
+  body {
+    background: #ff00ff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="50" height="50" x="0" y="0" fill="%23ffff00"/><rect width="50" height="50" x="50" y="50" fill="%23ffff00"/></svg>') repeat;
+    font-family: "Comic Sans MS", cursive;
+    color: lime;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><text x="0" y="20" font-size="20">🤪</text></svg>') 16 16, auto;
+  }
+
+  .container {
+    max-width: 100vw;
+    padding: 0 20px;
+    margin: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    animation: none;
+  }
+
+  body > * {
+    position: relative;
+    animation: float 20s linear infinite;
+    margin: 20px;
+    display: inline-block;
+  }
+
+  @keyframes float {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(50px, 25px) rotate(2deg); }
+    50% { transform: translate(100px, 0) rotate(-2deg); }
+    75% { transform: translate(50px, -25px) rotate(2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+
+  .container > * {
+    animation: float2 15s linear infinite;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  @keyframes float2 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(-25px, 12px) rotate(-1deg); }
+    66% { transform: translate(25px, -12px) rotate(1deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+
+  .blink, .marquee, .flash-banner, .media-player, .button {
+    z-index: 1;
+    position: relative;
+  }
+
+  .blink {
+    animation: blink 0.2s infinite;
+    font-size: 60px;
+    text-shadow: 5px 5px red, -5px -5px blue, 10px 10px yellow;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .marquee {
+    background: linear-gradient(90deg, red, blue, green, yellow);
+    padding: 15px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .marquee span {
+    display: inline-block;
+    animation: marquee 5s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .marquee-reverse span {
+    animation: marquee-reverse 3s linear infinite;
+  }
+
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  .multi-marquee {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .media-player {
+    background: linear-gradient(45deg, #ff0000, #00ff00);
+    border: 5px solid #ffff00;
+    padding: 10px;
+    margin: 10px 0;
+    animation: rainbow-border 1s infinite;
+  }
+
+  @keyframes rainbow-border {
+    0% { border-color: #ff0000; }
+    33% { border-color: #00ff00; }
+    66% { border-color: #0000ff; }
+    100% { border-color: #ff0000; }
+  }
+
+  .media-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .media-button {
+    background: #ff0000;
+    border: 3px solid #ffff00;
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    animation: shake 0.5s infinite;
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+
+  .tshirt {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    animation: crazyRotate 2s infinite linear;
+    filter: hue-rotate(360deg);
+  }
+
+  @keyframes crazyRotate {
+    0% { transform: rotateY(0deg) scale(1) skew(0deg); }
+    50% { transform: rotateY(180deg) scale(1.5) skew(10deg); }
+    100% { transform: rotateY(360deg) scale(1) skew(0deg); }
+  }
+
+  .button {
+    background: linear-gradient(to bottom, #ff0000, #ff6600);
+    border: 12px ridge #ff0000;
+    padding: 30px 60px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 4px 4px #000, -4px -4px #f00;
+    cursor: pointer;
+    animation: crazyPulse 0.3s infinite;
+    transform-origin: center;
+  }
+
+  @keyframes crazyPulse {
+    0% { transform: scale(1) rotate(0deg) translate(0, 0); }
+    25% { transform: scale(1.1) rotate(5deg) translate(5px, 0); }
+    75% { transform: scale(1.1) rotate(-5deg) translate(-5px, 0); }
+    100% { transform: scale(1) rotate(0deg) translate(0, 0); }
+  }
+
+  .soul-button {
+    background: linear-gradient(to bottom, #000000, #660066);
+    border: 8px ridge #ff00ff;
+    color: #ff00ff;
+    margin-top: 20px;
+  }
+
+  .counter {
+    font-family: "Digital", monaco, monospace;
+    background: #000;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 24px;
+    border: 5px solid #00ff00;
+    animation: glow 1s infinite;
+  }
+
+  @keyframes glow {
+    0% { box-shadow: 0 0 5px #00ff00; }
+    50% { box-shadow: 0 0 20px #00ff00; }
+    100% { box-shadow: 0 0 5px #00ff00; }
+  }
+
+  .devil {
+    animation: dance 0.3s infinite;
+    display: inline-block;
+    font-size: 40px;
+  }
+
+  @keyframes dance {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(20deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+
+  .rainbow-text {
+    font-size: 120%;
+    text-shadow: 2px 2px 4px #f00;
+    animation: rainbow 2s linear infinite;
+  }
+
+  @keyframes rainbow {
+    0% { color: red; }
+    20% { color: yellow; }
+    40% { color: lime; }
+    60% { color: blue; }
+    80% { color: magenta; }
+    100% { color: red; }
+  }
+
+  .character {
+    font-size: 120px;
+    display: inline-block;
+    animation: bounce 0.5s infinite alternate;
+    margin: 10px;
+    text-shadow: 5px 5px 0 #ff0000;
+  }
+
+  @keyframes bounce {
+    from { transform: translateY(0) rotate(0deg); }
+    to { transform: translateY(-20px) rotate(10deg); }
+  }
+
+  .gosling {
+    font-size: 40px;
+    background: linear-gradient(45deg, #ff0000, #00ff00);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    animation: drive 2s infinite;
+  }
+
+  @keyframes drive {
+    0% { transform: translateX(-100%) rotate(0deg); }
+    50% { transform: translateX(100%) rotate(360deg); }
+    100% { transform: translateX(-100%) rotate(720deg); }
+  }
+
+  .mgr-quote {
+    font-size: 35px;
+    color: #ff0000;
+    text-transform: uppercase;
+    animation: glitch 0.2s infinite;
+    margin: 20px;
+  }
+
+  @keyframes glitch {
+    0% { transform: skew(0deg); }
+    25% { transform: skew(10deg); }
+    75% { transform: skew(-10deg); }
+    100% { transform: skew(0deg); }
+  }
+
+  .indie-character {
+    font-size: 60px;
+    display: inline-block;
+    animation: spinAndBounce 0.8s infinite;
+    margin: 10px;
+    filter: hue-rotate(360deg);
+  }
+
+  @keyframes spinAndBounce {
+    0% { transform: translateY(0) rotate(0deg) scale(1); }
+    50% { transform: translateY(-30px) rotate(180deg) scale(1.5); }
+    100% { transform: translateY(0) rotate(360deg) scale(1); }
+  }
+
+  .indie-quote {
+    font-size: 20px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    padding: 10px;
+    margin: 5px;
+    animation: shakeText 0.3s infinite;
+  }
+
+  @keyframes shakeText {
+    0% { transform: translate(0); }
+    25% { transform: translate(5px, 5px); }
+    75% { transform: translate(-5px, -5px); }
+    100% { transform: translate(0); }
+  }
+  
+  .flash-banner {
+    background: linear-gradient(90deg, #ff0000, #ffff00);
+    padding: 15px;
+    font-size: 32px;
+    animation: flash-bg 0.3s infinite;
+    margin: 15px 0;
+    border: 8px dashed #00ff00;
+  }
+  
+  @keyframes flash-bg {
+    0% { background: linear-gradient(90deg, #ff0000, #ffff00); }
+    50% { background: linear-gradient(90deg, #00ff00, #0000ff); }
+    100% { background: linear-gradient(90deg, #ff0000, #ffff00); }
+  }
+
+  @keyframes chaosFloat {
+    0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    25% { transform: translate(25px, -12px) rotate(45deg) scale(1.1); }
+    50% { transform: translate(-25px, 25px) rotate(-45deg) scale(0.9); }
+    75% { transform: translate(12px, -25px) rotate(45deg) scale(1.05); }
+  }
+
+  @keyframes psychedelic {
+    0% { filter: hue-rotate(0deg) blur(0px); }
+    50% { filter: hue-rotate(90deg) blur(1px); }
+    100% { filter: hue-rotate(0deg) blur(0px); }
+  }
+
+  body > *, .container > * {
+    animation: chaosFloat 20s infinite cubic-bezier(0.4, 0, 0.2, 1), 
+               psychedelic 10s infinite;
+  }
+
+  body > *:hover, .container > *:hover {
+    transform: scale(1.2) rotate(360deg);
+    z-index: 9999;
+  }
+
+  .flash-banner {
+    font-size: 50px;
+    text-shadow: 5px 5px #ff0000, -5px -5px #00ff00, 10px 10px #0000ff;
+    animation: flash-bg 0.1s infinite;
+  }
+
+  .button {
+    font-size: 60px;
+    animation: crazyPulse 0.1s infinite;
+    transform: perspective(500px);
+  }
+
+  .button:hover {
+    animation: chaosFloat 1s infinite;
+  }
+
+  .marquee span {
+    font-size: 40px;
+    animation: marquee 2s linear infinite, psychedelic 1s infinite;
+  }
+
+  .character {
+    font-size: 200px;
+  }
+
+  .indie-quote {
+    font-size: 35px;
+    animation: glitch 0.1s infinite;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="blink">&#x1f525; &#x421;&#x42b;&#x420;&#x41d;&#x418;&#x41a;&#x418; &#x411;&#x410;&#x420;&#x410;&#x411;&#x423;&#x41b;&#x42c;&#x41a;&#x418; &#x41a;&#x418;&#x41b;&#x42c;&#x41a;&#x418; &#x1f525;</h1>
+    
+    <div class="multi-marquee">
+      <div class="marquee">
+        <span>!!! &#x421;&#x41a;&#x418;&#x414;&#x41a;&#x410; 146% &#x41d;&#x410; &#x412;&#x421;&#x415; &#x424;&#x423;&#x422;&#x411;&#x41e;&#x41b;&#x41a;&#x418;!!! &#x423;&#x421;&#x41f;&#x415;&#x419; &#x41a;&#x423;&#x41f;&#x418;&#x422;&#x42c;!!! &#x422;&#x41e;&#x41b;&#x42c;&#x41a;&#x41e; &#x421;&#x415;&#x413;&#x41e;&#x414;&#x41d;&#x42f; &#x418; &#x422;&#x41e;&#x41b;&#x42c;&#x41a;&#x41e; &#x421;&#x415;&#x419;&#x427;&#x410;&#x421;!!!</span>
+      </div>
+      <div class="marquee marquee-reverse">
+        <span>!!! &#x411;&#x415;&#x421;&#x41f;&#x41b;&#x410;&#x422;&#x41d;&#x410;&#x42f; &#x414;&#x41e;&#x421;&#x422;&#x410;&#x412;&#x41a;&#x410; &#x414;&#x423;&#x428;&#x418; &#x41d;&#x410; &#x41c;&#x410;&#x420;&#x421;!!! &#x420;&#x410;&#x419;&#x42f;&#x41d; &#x413;&#x41e;&#x421;&#x41b;&#x418;&#x41d;&#x413; &#x414;&#x41e;&#x421;&#x422;&#x410;&#x412;&#x418;&#x422; &#x41b;&#x418;&#x427;&#x41d;&#x41e;!!! &#x421;&#x41a;&#x418;&#x411;&#x418;&#x414;&#x418; &#x422;&#x423;&#x410;&#x41b;&#x415;&#x422; &#x412; &#x41f;&#x41e;&#x414;&#x410;&#x420;&#x41e;&#x41a;!!!</span>
+      </div>
+      <div class="marquee">
+        <span>!!! &#x41d;&#x410;&#x41d;&#x41e;&#x422;&#x415;&#x425;&#x41d;&#x41e;&#x41b;&#x41e;&#x413;&#x418;&#x418; &#x41e;&#x422; &#x421;&#x415;&#x41d;&#x410;&#x422;&#x41e;&#x420;&#x410; &#x410;&#x420;&#x41c;&#x421;&#x422;&#x420;&#x41e;&#x41d;&#x413;&#x410;!!! &#x414;&#x416;&#x415;&#x422;&#x421;&#x422;&#x420;&#x418;&#x41c; &#x421;&#x42d;&#x41c; &#x41e;&#x414;&#x41e;&#x411;&#x420;&#x42f;&#x415;&#x422;!!! &#x41f;&#x420;&#x410;&#x412;&#x418;&#x41b;&#x410; &#x41f;&#x420;&#x418;&#x420;&#x41e;&#x414;&#x42b;!!!</span>
+      </div>
+      <div class="marquee">
+        <span>!!! &#x421;&#x423;&#x41f;&#x415;&#x420; &#x41c;&#x415;&#x413;&#x410; &#x423;&#x41b;&#x42c;&#x422;&#x420;&#x410; &#x420;&#x410;&#x421;&#x41f;&#x420;&#x41e;&#x414;&#x410;&#x416;&#x410; !!! &#x421;&#x41a;&#x418;&#x414;&#x41a;&#x410; 999%!!! &#x417;&#x410;&#x411;&#x418;&#x420;&#x410;&#x419; &#x424;&#x423;&#x422;&#x411;&#x41e;&#x41b;&#x41a;&#x418; &#x414;&#x410;&#x420;&#x41e;&#x41c;!!! &#x420;&#x410;&#x419;&#x42f;&#x41d; &#x413;&#x41e;&#x421;&#x41b;&#x418;&#x41d;&#x413; &#x414;&#x41e;&#x421;&#x422;&#x410;&#x412;&#x418;&#x422; &#x41b;&#x418;&#x427;&#x41d;&#x41e;!!! &#x41d;&#x410;&#x41d;&#x41e;&#x41c;&#x410;&#x428;&#x418;&#x41d;&#x42b; &#x412; &#x41f;&#x41e;&#x414;&#x410;&#x420;&#x41e;&#x41a;!!!</span>
+      </div>
+      <div class="marquee marquee-reverse">
+        <span>!!! &#x422;&#x41e;&#x41b;&#x42c;&#x41a;&#x41e; &#x421;&#x415;&#x413;&#x41e;&#x414;&#x41d;&#x42f; !!! &#x41a;&#x410;&#x416;&#x414;&#x41e;&#x41c;&#x423; &#x41f;&#x41e;&#x41a;&#x423;&#x41f;&#x410;&#x422;&#x415;&#x41b;&#x42e; &#x421;&#x41a;&#x418;&#x411;&#x418;&#x414;&#x418; &#x422;&#x423;&#x410;&#x41b;&#x415;&#x422; &#x418; &#x414;&#x423;&#x428;&#x410; &#x421;&#x415;&#x41d;&#x410;&#x422;&#x41e;&#x420;&#x410; &#x410;&#x420;&#x41c;&#x421;&#x422;&#x420;&#x41e;&#x41d;&#x413;&#x410; &#x412; &#x41f;&#x41e;&#x414;&#x410;&#x420;&#x41e;&#x41a; !!! &#x422;&#x41e;&#x420;&#x41e;&#x41f;&#x418;&#x421;&#x42c; !!!</span>
+      </div>
+      <div class="marquee">
+        <span>!!! &#x423;&#x421;&#x41f;&#x415;&#x419; &#x41a;&#x423;&#x41f;&#x418;&#x422;&#x42c; &#x421;&#x42b;&#x420;&#x41d;&#x418;&#x41a;&#x418; &#x411;&#x410;&#x420;&#x410;&#x411;&#x423;&#x41b;&#x42c;&#x41a;&#x418; &#x41a;&#x418;&#x41b;&#x42c;&#x41a;&#x418; !!! &#x41d;&#x410;&#x424;&#x410;&#x41d;&#x42f; &#x41e;&#x414;&#x41e;&#x411;&#x420;&#x42f;&#x415;&#x422; !!! &#x424;&#x420;&#x415;&#x414;&#x414;&#x418; &#x424;&#x410;&#x417;&#x411;&#x415;&#x420; &#x41d;&#x41e;&#x421;&#x418;&#x422; !!! &#x421;&#x410;&#x41d;&#x421; &#x410;&#x41d;&#x414;&#x415;&#x420;&#x422;&#x415;&#x419;&#x41b; &#x420;&#x415;&#x41a;&#x41e;&#x41c;&#x415;&#x41d;&#x414;&#x423;&#x415;&#x422; !!!</span>
+      </div>
+      <div class="marquee marquee-reverse">
+        <span>!!! &#x41c;&#x415;&#x413;&#x410; &#x410;&#x41a;&#x426;&#x418;&#x42f; !!! &#x41f;&#x420;&#x418; &#x41f;&#x41e;&#x41a;&#x423;&#x41f;&#x41a;&#x415; &#x41e;&#x414;&#x41d;&#x41e;&#x419; &#x424;&#x423;&#x422;&#x411;&#x41e;&#x41b;&#x41a;&#x418; - &#x412;&#x422;&#x41e;&#x420;&#x410;&#x42f; &#x412; &#x41f;&#x41e;&#x414;&#x410;&#x420;&#x41e;&#x41a; !!! &#x41f;&#x420;&#x418; &#x41f;&#x420;&#x41e;&#x414;&#x410;&#x416;&#x415; &#x414;&#x423;&#x428;&#x418; - &#x421;&#x41a;&#x418;&#x414;&#x41a;&#x410; 200% !!!</span>
+      </div>
+    </div>
+
+    <div class="character">&#x1f47e;</div>
+    <div class="mgr-quote">STANDING HERE I REALIZE!!!</div>
+    <div class="gosling">&#x1f697; &#x420;&#x410;&#x419;&#x42f;&#x41d; &#x413;&#x41e;&#x421;&#x41b;&#x418;&#x41d;&#x413; &#x41e;&#x414;&#x41e;&#x411;&#x420;&#x42f;&#x415;&#x422;! 
+      <br>I&apos;M A REAL HUMAN BEAN! &#x1f697;</div>
+    
+    <div class="character">&#x1f916;</div>
+    <div class="mgr-quote">MEMORIES BROKEN, THE TRUTH GOES UNSPOKEN!!!</div>
+
+    <div class="flash-banner">
+      &#x1f525; &#x41c;&#x415;&#x413;&#x410; &#x410;&#x41a;&#x426;&#x418;&#x42f;! &#x41a;&#x423;&#x41f;&#x418; &#x41e;&#x414;&#x41d;&#x423; &#x424;&#x423;&#x422;&#x411;&#x41e;&#x41b;&#x41a;&#x423; - &#x41f;&#x41e;&#x41b;&#x423;&#x427;&#x418; &#x421;&#x41a;&#x418;&#x411;&#x418;&#x414;&#x418; &#x422;&#x423;&#x410;&#x41b;&#x415;&#x422; &#x412; &#x41f;&#x41e;&#x414;&#x410;&#x420;&#x41e;&#x41a;! &#x1f525;
+    </div>
+
+    <div class="flash-banner">
+      &#x1f4a5; &#x420;&#x410;&#x419;&#x42f;&#x41d; &#x413;&#x41e;&#x421;&#x41b;&#x418;&#x41d;&#x413; &#x414;&#x41e;&#x421;&#x422;&#x410;&#x412;&#x41b;&#x42f;&#x415;&#x422; &#x41b;&#x418;&#x427;&#x41d;&#x41e;! &#x421;&#x410;&#x41d;&#x421; &#x410;&#x41d;&#x414;&#x415;&#x420;&#x422;&#x415;&#x419;&#x41b; &#x41f;&#x420;&#x41e;&#x412;&#x415;&#x420;&#x42f;&#x415;&#x422; &#x41a;&#x410;&#x427;&#x415;&#x421;&#x422;&#x412;&#x41e;! &#x1f4a5;
+    </div>
+
+    <div class="flash-banner">
+      &#x26a1; &#x418;&#x421;&#x41f;&#x41e;&#x41b;&#x42c;&#x417;&#x423;&#x419; &#x41f;&#x420;&#x41e;&#x41c;&#x41e;&#x41a;&#x41e;&#x414; &quot;&#x421;&#x41a;&#x418;&#x411;&#x418;&#x414;&#x418;&quot; &#x418; &#x41f;&#x41e;&#x41b;&#x423;&#x427;&#x418; &#x414;&#x423;&#x428;&#x423; &#x421;&#x415;&#x41d;&#x410;&#x422;&#x41e;&#x420;&#x410; &#x410;&#x420;&#x41c;&#x421;&#x422;&#x420;&#x41e;&#x41d;&#x413;&#x410;! &#x26a1;
+    </div>
+
+    <div class="indie-character">&#x1f3b2;</div>
+    <div class="indie-quote">DICE FROM INSCRYPTION SAYS: TOTAL MISPLAY!!!</div>
+
+    <div class="indie-character">&#x1f438;</div>
+    <div class="indie-quote">FROG FROM UNDERTALE SAYS: RIBBIT (DETERMINATION)</div>
+
+    <div class="indie-character">&#x1f47b;</div>
+    <div class="indie-quote">&#x41d;&#x410;&#x424;&#x410;&#x41d;&#x418; &#x418;&#x417; &#x411;&#x410;&#x411;&#x41a;&#x418; SAYS: &#x42d;&#x422;&#x41e; &#x412;&#x421;&#x415; &#x41f;&#x420;&#x41e;&#x414;&#x415;&#x41b;&#x41a;&#x418; &#x421;&#x415;&#x41a;&#x422;&#x410;&#x41d;&#x422;&#x41e;&#x412;!!!!</div>
+
+    <div class="indie-character">&#x1f3ad;</div>
+    <div class="indie-quote">&#x424;&#x420;&#x415;&#x414;&#x414;&#x418; &#x424;&#x410;&#x417;&#x411;&#x415;&#x420; &#x418;&#x417; &#x424;&#x41d;&#x410;&#x424;: &#x412;&#x410;&#x421; &#x423;&#x41a;&#x423;&#x421;&#x418;&#x41b; &#x410;&#x41d;&#x418;&#x41c;&#x410;&#x422;&#x420;&#x41e;&#x41d;&#x418;&#x41a; 1987!!!</div>
+
+    <div class="indie-character">&#x2694;&#xfe0f;</div>
+    <div class="indie-quote">&#x421;&#x410;&#x41d;&#x421; &#x418;&#x417; &#x410;&#x41d;&#x414;&#x415;&#x420;&#x422;&#x415;&#x419;&#x41b;: YOU&apos;RE GONNA HAVE A BAD TIME!!!</div>
+
+    <div class="indie-character">&#x1f3ae;</div>
+    <div class="indie-quote">&#x410;&#x419;&#x417;&#x415;&#x41a; &#x418;&#x417; BINDING OF ISAAC: &#x41c;&#x410;&#x41c;&#x410; &#x425;&#x41e;&#x427;&#x415;&#x422; &#x41c;&#x415;&#x41d;&#x42f; &#x423;&#x411;&#x418;&#x422;&#x42c;!!!</div>
+
+    <div class="media-player">
+      <h3 class="rainbow-text">&#x421;&#x423;&#x41f;&#x415;&#x420; &#x41c;&#x415;&#x413;&#x410; &#x41f;&#x41b;&#x415;&#x415;&#x420; 3000</h3>
+      <div class="media-controls">
+        <button class="media-button" onclick="playMeme(&apos;rickroll&apos;)">&#x1f3b5; &#x41d;&#x418;&#x41a;&#x41e;&#x413;&#x414;&#x410; &#x41d;&#x415; &#x421;&#x414;&#x410;&#x41c;&#x421;&#x42f;</button>
+        <button class="media-button" onclick="playMeme(&apos;rules&apos;)">&#x1f3b8; RULES OF NATURE</button>
+        <button class="media-button" onclick="playMeme(&apos;standing&apos;)">&#x1f9be; STANDING HERE</button>
+      </div>
+      <div id="memeText" class="rainbow-text" style="font-size: 24px; margin-top: 10px;">
+        &#x41e;&#x414;&#x41e;&#x411;&#x420;&#x415;&#x41d;&#x41e; &#x420;&#x410;&#x419;&#x42f;&#x41d;&#x41e;&#x41c; &#x413;&#x41e;&#x421;&#x41b;&#x418;&#x41d;&#x413;&#x41e;&#x41c; &#x418; &#x421;&#x415;&#x41d;&#x410;&#x422;&#x41e;&#x420;&#x41e;&#x41c; &#x410;&#x420;&#x41c;&#x421;&#x422;&#x420;&#x41e;&#x41d;&#x413;&#x41e;&#x41c;*
+      </div>
+    </div>
+
+    <div class="marquee">
+      <span>!!! &#x421;&#x41a;&#x418;&#x414;&#x41a;&#x410; 146% &#x41d;&#x410; &#x412;&#x421;&#x415; &#x424;&#x423;&#x422;&#x411;&#x41e;&#x41b;&#x41a;&#x418;!!! &#x423;&#x421;&#x41f;&#x415;&#x419; &#x41a;&#x423;&#x41f;&#x418;&#x422;&#x42c;!!! &#x422;&#x41e;&#x41b;&#x42c;&#x41a;&#x41e; &#x421;&#x415;&#x413;&#x41e;&#x414;&#x41d;&#x42f; &#x418; &#x422;&#x41e;&#x41b;&#x42c;&#x41a;&#x41e; &#x421;&#x415;&#x419;&#x427;&#x410;&#x421;!!! &#x421;&#x410;&#x41d;&#x421; &#x410;&#x41d;&#x414;&#x415;&#x420;&#x422;&#x415;&#x419;&#x41b; &#x414;&#x410;&#x415;&#x422; &#x424;&#x420;&#x415;&#x414;&#x414;&#x418; &#x424;&#x410;&#x417;&#x411;&#x415;&#x420;!!! &#x41d;&#x410;&#x424;&#x410;&#x41d;&#x42f; &#x417;&#x410;&#x411;&#x418;&#x420;&#x410;&#x415;&#x422; &#x414;&#x423;&#x428;&#x418; &#x414;&#x410;&#x420;&#x41e;&#x41c;!!!</span>
+    </div>
+
+    <div class="counter">
+      &#x421;&#x41a;&#x418;&#x411;&#x418;&#x414;&#x418; &#x422;&#x423;&#x410;&#x41b;&#x415;&#x422;&#x41e;&#x412; &#x41e;&#x41d;&#x41b;&#x410;&#x419;&#x41d;: <span id="visitors">666</span> &#x1f47b;&#x1f480;&#x1f47d;
+    </div>
+
+    <p class="mgr-quote">RULES OF NATURE!!!</p>
+
+    <div class="blink" style="font-size: 30px; margin: 20px 0;">
+      !!! &#x423;&#x421;&#x41f;&#x415;&#x419; &#x41a;&#x423;&#x41f;&#x418;&#x422;&#x42c; !!! &#x422;&#x41e;&#x41b;&#x42c;&#x41a;&#x41e; &#x421;&#x415;&#x419;&#x427;&#x410;&#x421; !!! &#x420;&#x410;&#x419;&#x42f;&#x41d; &#x413;&#x41e;&#x421;&#x41b;&#x418;&#x41d;&#x413; &#x416;&#x414;&#x415;&#x422; !!!
+    </div>
+
+    <div class="blink" style="font-size: 25px; margin: 10px 0;">
+      &#x41d;&#x410;&#x428;&#x418; &#x424;&#x423;&#x422;&#x411;&#x41e;&#x41b;&#x41a;&#x418; &#x41d;&#x41e;&#x421;&#x42f;&#x422;: &#x421;&#x415;&#x41d;&#x410;&#x422;&#x41e;&#x420; &#x410;&#x420;&#x41c;&#x421;&#x422;&#x420;&#x41e;&#x41d;&#x413;, &#x414;&#x416;&#x415;&#x422;&#x421;&#x422;&#x420;&#x418;&#x41c; &#x421;&#x42d;&#x41c;, &#x421;&#x410;&#x41d;&#x421; &#x410;&#x41d;&#x414;&#x415;&#x420;&#x422;&#x415;&#x419;&#x41b; &#x418; &#x414;&#x410;&#x415;&#x422; &#x424;&#x420;&#x415;&#x414;&#x414;&#x418; &#x424;&#x410;&#x417;&#x411;&#x415;&#x420;!!!
+    </div>
+
+    <button class="button" onclick="buyShirt()">
+      &#x41a;&#x423;&#x41f;&#x418;&#x422;&#x42c; &#x418; &#x421;&#x422;&#x410;&#x422;&#x42c; &#x421;&#x41a;&#x418;&#x411;&#x418;&#x414;&#x418; &#x413;&#x41e;&#x421;&#x41b;&#x418;&#x41d;&#x413;&#x41e;&#x41c;!!!1!!!1! &#x1f525;
+    </button>
+
+    <br>
+
+    <button class="button soul-button" onclick="sellSoul()">
+      &#x417;&#x410;&#x411;&#x418;&#x420;&#x410;&#x419;&#x422;&#x415; &#x41c;&#x41e;&#x42e; &#x414;&#x423;&#x428;&#x423;!!! <span class="devil">&#x1f47f;</span><span class="devil">&#x1f608;</span><span class="devil">&#x1f47f;</span>
+    </button>
+
+    <p style="font-size: 14px;" class="rainbow-text">
+      &#x41e;&#x414;&#x41e;&#x411;&#x420;&#x415;&#x41d;&#x41e; &#x420;&#x410;&#x419;&#x42f;&#x41d;&#x41e;&#x41c; &#x413;&#x41e;&#x421;&#x41b;&#x418;&#x41d;&#x413;&#x41e;&#x41c; &#x418; &#x421;&#x415;&#x41d;&#x410;&#x422;&#x41e;&#x420;&#x41e;&#x41c; &#x410;&#x420;&#x41c;&#x421;&#x422;&#x420;&#x41e;&#x41d;&#x413;&#x41e;&#x41c;*
+      <br>
+      <span style="font-size: 10px">* &#x43e;&#x43d;&#x438; &#x43d;&#x435; &#x432; &#x43a;&#x443;&#x440;&#x441;&#x435;, &#x43d;&#x43e; &#x43d;&#x430;&#x43c; &#x442;&#x430;&#x43a; &#x445;&#x43e;&#x447;&#x435;&#x442;&#x441;&#x44f;</span>
+    </p>
+  </div>
+
+  <script>
+    function buyShirt() {
+      const messages = ["ВАУ!! ВЫ ТЕПЕРЬ СУПЕР МЕГА УЛЬТРА СКИБИДИ ГОСЛИНГ!!!", "ПОЗДРАВЛЯЕМ!!! ВЫ СТАЛИ ЧАСТЬЮ METAL GEAR RISING FAMILY!!!", "STANDING HERE YOU REALIZE YOU ARE JUST LIKE ME!!!", "RULES OF NATURE!!!", "САНС АНДЕРТЕЙЛ ДАРИТ ВАМ ПЛОХОЕ ВРЕМЯ!!!", "ФРЕДДИ ФАЗБЕР УКУСИТ ВАС!!!", "СКИБИДИ ТУАЛЕТ ПОДАРИЛ ВАМ СВОЮ ДУШУ!!!"];
+      
+      for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+          alert(messages[Math.floor(Math.random() * messages.length)]);
+          document.body.style.transform = `rotate(${Math.random() * 360}deg) scale(${Math.random() + 0.8})`;
+          document.body.style.filter = `hue-rotate(${Math.random() * 90}deg)`;
+        }, i * 1000);
+      }
+      setTimeout(() => {
+        document.body.style.transform = '';
+        document.body.style.filter = '';
+      }, 3000);
+    }
+
+    function sellSoul() {
+      const effects = [
+        () => document.body.style.transform = 'scale(1.5)', 
+        () => document.body.style.filter = 'invert(0.5) hue-rotate(90deg)',
+        () => document.body.style.animation = 'spin 1s infinite'
+      ];
+      const messages = ["ВАШ КОМПЬЮТЕР ТЕПЕРЬ ОДЕРЖИМ!!!", "РАЙЯН ГОСЛИНГ ЗАБРАЛ ВАШУ ДУШУ!!!", "СЕНАТОР АРМСТРОНГ ИСПОЛЬЗУЕТ ВАШУ ДУШУ!!!", "ВЫ СТАЛИ ЧАСТЬЮ СКИБИДИ АРМИИ!!!"];
+      
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          alert(messages[Math.floor(Math.random() * messages.length)]);
+          effects[Math.floor(Math.random() * effects.length)]();
+        }, i * 800);
+      }
+      setTimeout(() => {
+        document.body.style = '';
+        document.documentElement.style = '';
+      }, 4000);
+    }
+
+    function playMeme(type) {
+      const effects = [
+        () => document.body.style.transform = `rotate(${Math.random() * 360}deg)`,
+        () => document.body.style.filter = `hue-rotate(${Math.random() * 90}deg)`,
+        () => document.body.style.animation = 'psychedelic 1s infinite'
+      ];
+      const messages = {
+        rickroll: ["НИКОГДА НЕ СДАВАЙСЯ!!!", "РАЙЯН ГОСЛИНГ ТАНЦУЕТ!!!"],
+        rules: ["ПРАВИЛА ПРИРОДЫ!!!", "РЕЖИМ НАНОМАШИН!!!"],
+        standing: ["СТОЯ ЗДЕСЬ Я ПОНИМАЮ!!!", "ТЫ БЫЛ ТАКИМ ЖЕ!!!"]
+      };
+      
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          if (i % 2 === 0) {
+            alert(messages[type][Math.floor(Math.random() * messages[type].length)]);
+          }
+          effects[Math.floor(Math.random() * effects.length)]();
+        }, i * 600);
+      }
+      setTimeout(() => {
+        document.body.style = '';
+        document.documentElement.style = '';
+      }, 3000);
+    }
+
+    setInterval(() => {
+      document.getElementById('visitors').textContent = Math.floor(Math.random() * 1000) + 666;
+    }, 2000);
+  </script>
+</body></html>
